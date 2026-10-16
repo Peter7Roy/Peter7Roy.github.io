@@ -1,0 +1,285 @@
+<title>Calculator Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAF8FC;
+    --surface: #FFFFFF;
+    --text: #201C2B;
+    --muted: #6B6478;
+    --accent: #6750A4;
+    --accent-soft: #EDE7F6;
+    --border: #E4DEEE;
+    --code-bg: #F1EDF8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15131C;
+      --surface: #1E1A28;
+      --text: #ECE8F5;
+      --muted: #A79FBD;
+      --accent: #B49CE0;
+      --accent-soft: #2C2438;
+      --border: #342C42;
+      --code-bg: #241E30;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15131C;
+    --surface: #1E1A28;
+    --text: #ECE8F5;
+    --muted: #A79FBD;
+    --accent: #B49CE0;
+    --accent-soft: #2C2438;
+    --border: #342C42;
+    --code-bg: #241E30;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Public Sans", -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.65;
+  }
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+  header.hero {
+    margin-bottom: 48px;
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 700;
+    font-size: 46px;
+    letter-spacing: -0.5px;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .meta {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .lede {
+    font-size: 18px;
+    color: var(--muted);
+    margin-top: 20px;
+    max-width: 60ch;
+  }
+
+  .summary {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    padding: 24px 28px;
+    margin: 40px 0 56px;
+  }
+  .summary h2 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .summary ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+  }
+  .summary li {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 10px;
+    font-size: 15px;
+  }
+  .summary li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-top: 8px;
+  }
+
+  section {
+    margin: 0 0 44px;
+  }
+  section h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin: 0 0 16px;
+    text-wrap: balance;
+  }
+  section h2 .num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 24px 0 8px;
+  }
+  p { margin: 0 0 14px; max-width: 68ch; }
+  p.last { margin-bottom: 0; }
+  ul.plain, ol.plain { padding-left: 22px; margin: 0 0 14px; max-width: 68ch; }
+  ul.plain li, ol.plain li { margin-bottom: 8px; }
+
+  code, .inline-code {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.88em;
+    background: var(--code-bg);
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+  }
+
+  a { color: var(--accent); text-decoration-thickness: 1.5px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin: 16px 0;
+  }
+  .card + .card { margin-top: 14px; }
+  .card h4 {
+    margin: 0 0 6px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card p { margin: 0; font-size: 14.5px; color: var(--muted); }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--muted);
+  }
+  footer a { color: var(--accent); }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 34px; }
+    .page { padding: 48px 18px 72px; }
+  }
+</style>
+
+<div class="page">
+  <header class="hero">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Calculator</h1>
+    <p class="meta">Effective &amp; last updated: September 27, 2026</p>
+    <p class="lede">This page explains what the Calculator app does and does not do with your data — in plain terms, matching exactly what's in the app's code.</p>
+  </header>
+
+  <div class="summary">
+    <h2>In short</h2>
+    <ul>
+      <li>The microphone is only used live, while you use Voice Calculator, to turn your speech into a math expression. The app itself never records or stores audio.</li>
+      <li>Your calculation history and settings stay on your device. Nothing is sent to us, because we don't run any servers.</li>
+      <li>The optional "Remove Ads" purchase is handled entirely by Google Play Billing — we never see your payment details.</li>
+      <li>The free version shows banner ads from Google AdMob, which collects device and advertising data to serve and measure ads. Buying "Remove Ads" turns ads off.</li>
+      <li>No accounts and no analytics. We never sell your data.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span> Information We Collect</h2>
+    <p>Calculator is built to work entirely on your device. Here is every category of data it touches:</p>
+
+    <h3>Voice input (microphone)</h3>
+    <p>The Voice Calculator screen requests microphone access (<code>RECORD_AUDIO</code>) so you can speak a calculation instead of typing it. Audio is passed to your device's own speech-recognition service (the one built into Android or iOS) purely to convert speech to text in real time. That service is run by Google or Apple and, depending on your device and settings, may process the audio on their servers. Calculator itself never records, stores, or transmits your voice — the recognized text is the only thing that reaches the app, and even that stays on your device unless you choose to calculate with it.</p>
+
+    <h3>Calculation history</h3>
+    <p>Standard, Scientific, Geometry, and Voice calculations you run are saved locally on your device (using Android/iOS's standard local-storage APIs) so the History screen can show past results. This history never leaves your device, and you can clear it at any time from the History screen.</p>
+
+    <h3>Advertising data (Google AdMob)</h3>
+    <p>Unless you've bought "Remove Ads," the app shows banner ads served by Google AdMob. To show and measure those ads, the Google Mobile Ads SDK collects information such as your device's advertising ID, IP address, device model and operating system, and how you interact with ads. This data goes directly to Google, not to us. If you're in the European Economic Area, the UK or Switzerland, the app asks for your consent before ads are requested, and you can change that choice anytime from the privacy button on the home screen. See <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>.</p>
+
+    <h3>Purchase status</h3>
+    <p>If you buy "Remove Ads," the purchase is processed entirely by Google Play Billing. Calculator only receives a confirmation that the purchase succeeded, which it stores locally to keep ads turned off — we never see or store your payment card details, billing address, or any other payment information.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> What We Don't Collect</h2>
+    <div class="card">
+      <h4>No accounts</h4>
+      <p>There is no sign-up, login, or profile of any kind — Calculator doesn't know who you are.</p>
+    </div>
+    <div class="card">
+      <h4>No analytics</h4>
+      <p>The app contains no analytics or crash-reporting SDK. The only third-party SDK that collects data is Google AdMob, described above.</p>
+    </div>
+    <div class="card">
+      <h4>No location data</h4>
+      <p>Calculator never requests or accesses your device's location.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Third-Party Services</h2>
+    <p>Three pieces of the app hand off to services we don't operate ourselves:</p>
+    <ul class="plain">
+      <li><strong>Device speech recognition</strong> — provided by your phone's operating system (Google or Apple), used only to transcribe speech for Voice Calculator. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's</a> or <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's</a> privacy policy, depending on your device.</li>
+      <li><strong>Google AdMob</strong> — serves the banner ads in the free version and collects the advertising data described above. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google Play Billing</strong> — handles the "Remove Ads" purchase end-to-end. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> Data Storage &amp; Security</h2>
+    <p class="last">All app data — calculation history, your "Remove Ads" entitlement, display preferences — is stored locally on your device using standard platform storage. There is no Calculator server or database, so we never receive this data. Advertising data collected by Google AdMob is held and secured by Google under its own policies.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> Children's Privacy</h2>
+    <p class="last">Calculator is a general-audience utility app not directed at children under 13, and we do not knowingly collect personal information from children. The app doesn't knowingly show ads to children or collect their information for advertising.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span> Your Choices</h2>
+    <ul class="plain">
+      <li>Revoke microphone access anytime in your device's Settings — Voice Calculator will simply stop working until you re-enable it.</li>
+      <li>Clear your calculation history anytime from the History screen.</li>
+      <li>Reset or opt out of personalized ads with your device's advertising ID settings (Android: Settings → Privacy → Ads). In the EEA, UK and Switzerland you can also change your ad consent from the privacy button on the app's home screen.</li>
+      <li>Buy "Remove Ads" to stop ads, and the data collection that comes with them, entirely.</li>
+      <li>Uninstalling the app removes all locally stored data immediately.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span> Changes to This Policy</h2>
+    <p class="last">If this policy changes — for example, if a new feature that touches data is added — we'll update the effective date above and describe the change here before it takes effect.</p>
+  </section>
+
+  <footer>
+    <p>Questions about this policy or the app? Contact <a href="mailto:peter7roy@gmail.com">peter7roy@gmail.com</a>.</p>
+  </footer>
+</div>
